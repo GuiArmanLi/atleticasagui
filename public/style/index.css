@@ -30,6 +30,20 @@ header a {
 }
 
 
+footer section:first-of-type {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+
+    text-align: justify;
+}
+
+
+footer section:last-of-type {
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+}
+
+
 h1,
 h2,
 h3 {
@@ -59,6 +73,8 @@ p {
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.3px;
+
+    margin: 0 !important;
 }
 
 em,
