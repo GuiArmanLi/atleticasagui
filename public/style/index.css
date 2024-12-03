@@ -29,6 +29,80 @@ header a {
     color: var(--white-color);
 }
 
+main .section-main {
+    position: relative;
+
+    height: 800px;
+}
+
+main .section-top {
+    position: relative;
+    background-color: var(--white-color);
+}
+
+main .section-top img {
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+}
+
+main .section-top .shadow-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.shadow-box::before {
+    content: "";
+    /* Pseudo-elemento vazio */
+    position: absolute;
+    /* Posiciona sobre o container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Cobre toda a largura */
+    height: 100%;
+    /* Cobre toda a altura */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo preto com 20% de opacidade */
+    z-index: 2;
+    /* Coloca o overlay acima da imagem */
+}
+
+main .section-top h2 {
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .section-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+    aspect-ratio: 3;
+
+    background-color: var(--mustard-yellow-color);
+}
+
+main .section-bottom {
+    background-color: var(--beige-color);
+}
+
+main .background-icon {
+    display: inline-flex;
+    justify-content: last center;
+    align-items: center;
+    background-color: var(--brown-color);
+
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
 
 footer section:first-of-type {
     background-color: var(--brown-color);
@@ -42,7 +116,6 @@ footer section:last-of-type {
     background-color: var(--yellow-color);
     color: var(--black-color);
 }
-
 
 h1,
 h2,
@@ -75,6 +148,14 @@ p {
     letter-spacing: 0.3px;
 
     margin: 0 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--white-color) !important;
 }
 
 em,
