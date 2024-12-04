@@ -29,6 +29,62 @@ header a {
     color: var(--white-color);
 }
 
+main .section-toba {
+    background-color: var(--mustard-yellow-color);
+    color: var(--white-color);
+}
+
+main .section-programs {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+main .program-item {
+    position: relative;
+
+}
+
+main .program-item img {
+    object-fit: fill;
+}
+
+/*Posicao do botao nao fica responsiva*/
+
+main .program-item .program-item-button {
+    position: absolute;
+    bottom: 50%; 
+    left: 10%;
+    
+    width: 20%;
+    width: fit-content;
+    
+    z-index: 1;
+}
+main .program-item .program-item-button h3 {
+    margin: 0;
+}
+
+main .program-item .program-item-button a {
+    position: absolute;
+    
+    background-color: var(--black-color);
+    color: var(--yellow-color);
+
+    height: min-content !important;
+    
+    padding: 8px;
+    border: 2px solid var(--white-color);
+}
+
+main .program-item .program-item-button a:hover {
+    border: 2px solid var(--yellow-color);
+
+    transition: 0.5s;
+}
+
+
 main .section-main {
     position: relative;
 
@@ -53,19 +109,13 @@ main .section-top .shadow-box {
 
 .shadow-box::before {
     content: "";
-    /* Pseudo-elemento vazio */
     position: absolute;
-    /* Posiciona sobre o container */
     top: 0;
     left: 0;
     width: 100%;
-    /* Cobre toda a largura */
     height: 100%;
-    /* Cobre toda a altura */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo preto com 20% de opacidade */
     z-index: 2;
-    /* Coloca o overlay acima da imagem */
 }
 
 main .section-top h2 {
