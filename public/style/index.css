@@ -29,15 +29,80 @@ header a {
     color: var(--white-color);
 }
 
+main .tobinha {
+    background-color: var(--beige-color);
+    height: 150vh;
+}
+
+main .section-identity {
+    position: relative;
+}
+
+main .section-identity .div-image {
+    overflow: hidden;
+    height: 75vh;
+}
+
+main .section-identity img {
+    object-fit: contain;
+}
+
+main .section-identity .div-identity {
+    position: relative;
+
+    top: 50%;
+    left: 70%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: var(--brown-color);
+    color: var(--white-color);
+}
+
+main .section-identity .div-identity h3 {
+    color: var(--beige-color);
+}
+
+main .parallax-section {
+    height: 50vh;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-color-tennis-sport-advertising-background-backgroundmotionwork-outtennistreeshand-paintedfreshhouses-image_75815.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+main .section-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px 20px;
+    background-color: black;
+
+    justify-items: center;
+    align-items: center;
+
+    color: var(--yellow-color)x;
+}
+
 main .section-toba {
     background-color: var(--mustard-yellow-color);
     color: var(--white-color);
 }
 
 main .section-programs {
+    height: 50vh;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -47,33 +112,34 @@ main .program-item {
 }
 
 main .program-item img {
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /*Posicao do botao nao fica responsiva*/
 
 main .program-item .program-item-button {
     position: absolute;
-    bottom: 50%; 
+    bottom: 50%;
     left: 10%;
-    
+
     width: 20%;
     width: fit-content;
-    
+
     z-index: 1;
 }
+
 main .program-item .program-item-button h3 {
     margin: 0;
 }
 
 main .program-item .program-item-button a {
     position: absolute;
-    
+
     background-color: var(--black-color);
     color: var(--yellow-color);
 
     height: min-content !important;
-    
+
     padding: 8px;
     border: 2px solid var(--white-color);
 }
@@ -86,9 +152,8 @@ main .program-item .program-item-button a:hover {
 
 
 main .section-main {
+    height: 100vh;
     position: relative;
-
-    height: 800px;
 }
 
 main .section-top {
@@ -98,7 +163,7 @@ main .section-top {
 
 main .section-top img {
     position: relative;
-    object-fit: cover;
+    object-fit: fill;
     z-index: 1;
 }
 
@@ -198,6 +263,11 @@ p {
     letter-spacing: 0.3px;
 
     margin: 0 !important;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 li {
