@@ -41,7 +41,7 @@
     <link rel="alternate" type="application/rss+xml" title="Feed para Atlética Sagui &raquo;"
         href="https://atleticasagui.com.br/feed/" />
 
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 
     <link rel="icon" href="./assets/logo_atletica.jpg"><!--Colocar referencia da imagem na nuvem-->
@@ -54,8 +54,6 @@
     <script id="website-schema" type="application/ld+json">
             {"@context":"https:\/\/schema.org","@type":"WebSite","name":"Atl\u00e9tica Sagui","alternateName":"Atl\u00e9tica Sagui","description":"Com uma vasta gama de atividades esportivas, desde futebol e v\u00f4lei at\u00e9 esportes menos convencionais, a Atl\u00e9tica se empenha em oferecer algo para todos. Al\u00e9m dos eventos esportivos, a Sagui organiza festas, competi\u00e7\u00f5es internas e atividades de integra\u00e7\u00e3o, criando um ambiente onde os alunos podem se conectar e fazer amizades duradouras.","url":"https:\/\/atleticasagui.com.br","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/atleticasagui.com.br\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}
         </script>
-
-
 </head>
 
 <body>
@@ -68,10 +66,9 @@
                         <a href="https://atleticasagui.com.br/" aria-current="page">
                             <img class="logo-icon" src="./assets/logo_atletica.jpg" alt="Logo atlética" />
                         </a>
-                        <!-- srcset="imagehere 50w, imagehere 50w" />Ajustar tamanho para celular e tablet-->
                     </div>
 
-                    <div>
+                    <nav class="menu">
                         <ul class="navbar-nav gap-5"> <!--Adicionar animação da barra embaixo-->
                             <li class="nav-item">
                                 <a class="nav-link text-light " href="#">Loja</a>
@@ -83,11 +80,20 @@
                                 <a class="nav-link text-light" href="#">Contatos</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
+
+                    <nav>
+                        <div class="menu-toggle"><i class="bi bi-list text-white"></i></div>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+
 
                     <div>
                         <button type="button" class="btn btn-outline-light">Doar</button>
-                        <!--Por que ele nao fica branco?-->
                     </div>
                 </div>
             </div>
@@ -95,10 +101,10 @@
     </header>
 
     <main>
-        <section class="section-entry">
+        <section class="page-entry">
             <div class="slider" id="slider"></div>
 
-            <div class="div-entry w-25">
+            <div class="text-entry w-25">
                 <p class="text-white">Atlética Sagui</p>
                 <h1 class="my-2 text-yellow">O que fazemos na vida ecoa na eternidade.</h1>
                 <p class="mb-5 text-white">O único limite que te impede, é aquele que você aceita.</p>
@@ -108,7 +114,7 @@
             </div>
         </section>
 
-        <section class="section-identity">
+        <section class="company-identity">
             <div class="w-75 m-auto">
 
                 <div class="w-50 p-5">
@@ -122,12 +128,12 @@
                     <a class="text-black" href="#">Leia mais</a>
                 </div>
 
-                <section class="section-identities ">
+                <section class="identities">
                     <div class="identity-img w-50">
                         <img src="https://png.pngtree.com/background/20210711/original/pngtree-hand-painted-cool-volleyball-sports-club-poster-background-material-picture-image_1127055.jpg"
                             alt="">
                     </div>
-                    <div class="div-identities w-50">
+                    <div class="identity w-50">
                         <div class="d-flex flex-row justify-content-evenly align-items-center p-5">
                             <div class="w-25 mx-4">
                                 <h3>Nossa missão</h3>
@@ -170,10 +176,7 @@
             </div>
         </section>
 
-        </section>
-
-        <!--Aplicar fundo escuro-->
-        <section class="section-categories shadow-box parallax-section p-2 ">
+        <section class="parallax-section shadow-box p-2 ">
             <div>
                 <div>
                     <i></i>
@@ -235,13 +238,13 @@
             </div>
         </section>
 
-        <section class="section-events">
+        <section class="events">
             <div>
                 <h2 class="text-center">As melhores atividades para você.</h2>
                 <p class="text-center text-white">Nossos programas</p>
             </div>
 
-            <section class="section-programs">
+            <section class="programs">
                 <div class="program-item">
                     <img class="w-100 h-100"
                         src="https://static.vecteezy.com/ti/fotos-gratis/t1/27788272-esportes-fundo-corredor-pernas-corre-baixa-a-estrada-fechar-se-em-uma-tenis-ai-generativo-foto.jpg"
@@ -277,8 +280,8 @@
             </section>
         </section>
 
-        <section class="section-contacts w-100">
-            <section class="w-100 h-50 section-contacts-top">
+        <section class="contacts w-100">
+            <section class="contacts-top w-100 h-50">
                 <div class="w-100 h-100 shadow-box">
                     <img class="w-100 h-100"
                         src="https://www.shutterstock.com/image-vector/colorful-concept-sports-silhouettes-sport-600nw-2378868431.jpg"
@@ -287,7 +290,7 @@
                 </div>
             </section>
 
-            <section class="d-flex flex-row w-75 h-50 m-auto section-contacts-middle">
+            <section class="contacts-middle d-flex flex-row w-75 h-50 m-auto">
                 <div class="w-50">
                     <iframe class="w-100 h-100" loading="lazy"
                         src="https://maps.google.com/maps?q=Rua%20Carlos%20de%20Carvalho%20-%20Ferraz%20de%20Vasconcelos%20200&#038;t=m&#038;z=17&#038;output=embed&#038;iwloc=near"
@@ -323,7 +326,7 @@
                 </div>
             </section>
 
-            <section class="d-flex flex-column justify-content-end align-items-center h-50 p-5 section-contacts-bottom">
+            <section class="contacts-bottom d-flex flex-column justify-content-end align-items-center h-50 p-5">
                 <div class="p-2 pt-4">
                     <p class="text-black">Nos siga nas redes sociais</p>
                 </div>
@@ -350,7 +353,7 @@
 
     <footer>
         <!--Arrumar a fonte-->
-        <section class="d-flex flex-row justify-content-evenly align-items-center p-4">
+        <section class="donation d-flex flex-row justify-content-evenly align-items-center p-4">
             <div class="w-25 d-flex flex-column justify-content-center align-items-center p-4 m-4">
                 <img class="logo-icon" src="./assets/logo_atletica.jpg" alt="Logo Atlética" />
 
@@ -367,12 +370,12 @@
             </div>
         </section>
 
-        <section class="d-flex justify-content-center align-items-center">
+        <section class="copyright d-flex justify-content-center align-items-center">
             <p class="m-0 p-4">Copyright 2024 © Todos os direitos reservados</p>
         </section>
     </footer>
 
-    <script src="./animations/index.js" async></script>
+    <script src="./animations/slider_animation.js" async></script>
     <script src="./script/lazyLoader.js"></script>
 </body>
 
