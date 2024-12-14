@@ -20,14 +20,122 @@ body {
     letter-spacing: 0.5px;
 }
 
+
 header {
     background-color: var(--yellow-color);
-    padding: 15px 20px;
+    height: 10vh;
 }
 
 header a {
     color: var(--white-color);
 }
+
+main .section-entry {
+    position: relative;
+    height: 90vh;
+    background-color: #401E11;
+    
+}
+
+.div-entry {
+    position: absolute;
+
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+
+    z-index: 2;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+}
+
+.slide.active {
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.slide.previous {
+    transform: translateX(0);
+    z-index: 1;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.btn-black {
+    background-color: var(--black-color);
+    padding: 10px 50px 10px 10px !important;
+    border: 1px solid transparent;
+    
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.btn-black:hover {
+    border-color: var(--white-color);
+}
+
+.btn-outline-black {
+    background-color: var(--black-color);
+    padding: 10px 50px 10px 10px !important;
+    border: 1px solid transparent;
+    
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.btn-outline-black:hover {
+    background-color: transparent;
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+
+.btn-white {
+    background-color: transparent;
+    padding: 10px 50px 10px 10px !important;
+    border: 1px solid var(--white-color);
+    
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.btn-white:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-color: transparent;
+}
+
+
 
 main .tobinha {
     background-color: var(--beige-color);
@@ -316,6 +424,14 @@ i {
 .logo-icon {
     width: 50px;
     aspect-ratio: 1;
+}
+
+.text-yellow {
+    color: var(--yellow-color);
+}
+
+.text-beige {
+    color: var(--beige-color);
 }
 
 .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
