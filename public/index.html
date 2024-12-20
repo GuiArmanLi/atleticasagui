@@ -25,358 +25,294 @@
         content="Com uma vasta gama de atividades esportivas, desde futebol e vôlei até esportes menos convencionais, a Atlética se empenha em oferecer algo para todos. Além dos eventos esportivos, a Sagui organiza festas, competições internas e atividades de integração, criando um ambiente onde os alunos podem se conectar e fazer amizades duradouras.">
     <meta property="og:image" content=""><!--Colocar referencia da imagem na nuvem-->
     <meta property="og:image:secure_url" content=""><!--Colocar referencia da imagem na nuvem-->
-    <meta property="og:image:width" content="600"><!--595-->
-    <meta property="og:image:height" content="700"><!--710-->
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="700">
+
     <meta name="msapplication-TileImage" content="" /><!--Colocar referencia da imagem na nuvem-->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
 
     <link rel="canonical" href="https://atleticasagui.com.br/">
     <link rel="alternate" type="application/rss+xml" title="Feed para Atlética Sagui &raquo;"
         href="https://atleticasagui.com.br/feed/" />
 
-    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/main.css">
     <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 
     <link rel="icon" href="./assets/logo_atletica.jpg"><!--Colocar referencia da imagem na nuvem-->
 
-    <link rel="preload" data-rocket-preload as="style"
-        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" />
-
     <link rel='shortlink' href='https://atleticasagui.com.br/' />
 
+    <script src="./scripts/animations/dropdown.js" async></script>
+    <script src="./scripts/animations/sliderAnimation.js" defer></script>
+    <script src="./script/lazyLoader.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script id="website-schema" type="application/ld+json">
             {"@context":"https:\/\/schema.org","@type":"WebSite","name":"Atl\u00e9tica Sagui","alternateName":"Atl\u00e9tica Sagui","description":"Com uma vasta gama de atividades esportivas, desde futebol e v\u00f4lei at\u00e9 esportes menos convencionais, a Atl\u00e9tica se empenha em oferecer algo para todos. Al\u00e9m dos eventos esportivos, a Sagui organiza festas, competi\u00e7\u00f5es internas e atividades de integra\u00e7\u00e3o, criando um ambiente onde os alunos podem se conectar e fazer amizades duradouras.","url":"https:\/\/atleticasagui.com.br","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/atleticasagui.com.br\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}
         </script>
 </head>
 
 <body>
-    <header><!--Deixar responsivo-->
-        <nav class="navbar navbar-expand-lg w-100 h-100">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse d-flex flex-row justify-content-evenly align-items-center"
-                    id="navbarNav">
-                    <div>
-                        <a href="https://atleticasagui.com.br/" aria-current="page">
-                            <img class="logo-icon" src="./assets/logo_atletica.jpg" alt="Logo atlética" />
-                        </a>
-                    </div>
+    <header>
+        <nav class="navigation d-flex justify-content-evenly align-items-center">
+            <div>
+                <a href="https://atleticasagui.com.br/" aria-current="page">
+                    <img class="logo-icon" src="./assets/logo_atletica.jpg" alt="Logo atlética" />
+                </a>
+            </div>
 
-                    <nav class="menu">
-                        <ul class="navbar-nav gap-5"> <!--Adicionar animação da barra embaixo-->
-                            <li class="nav-item">
-                                <a class="nav-link text-light " href="#">Loja</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Membros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Contatos</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <nav class="d-flex align-items-center">
+                <i class="fas fa-bars menu-toggle"></i>
+                <ul class="menu">
+                    <li><a href="https://atleticasagui.com.br/loja">Loja</a></li>
+                    <li><a href="https://atleticasagui.com.br./blog.html">Blog</a></li>
+                    <li><a href="https://atleticasagui.com.br./grafite-virtual.html">Grafite Virtual</a></li>
+                    <li><a href="https://atleticasagui.com.br./membros.html">Nosso Time</a></li>
+                </ul>
+            </nav>
 
-                    <nav>
-                        <div class="menu-toggle"><i class="bi bi-list text-white"></i></div>
-                        <ul class="menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </nav>
-
-
-                    <div>
-                        <button type="button" class="btn btn-outline-light">Doar</button>
-                    </div>
-                </div>
+            <div> <!--Usar router e templete com angular-->
+                <a href="./pages/_doacao" class="btn-outline-white">Doar</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="page-entry">
-            <div class="slider" id="slider"></div>
+            <div class="slider w-100 h-100" id="slider">
+                <div class="text-entry w-50">
+                    <p class="text-white">Atlética Sagui</p>
+                    <h1 class="text-yellow">O que fazemos na vida ecoa na eternidade</h1>
+                    <p class="text-white">O único limite que te impede, é aquele que você aceita</p>
 
-            <div class="text-entry w-25">
-                <p class="text-white">Atlética Sagui</p>
-                <h1 class="my-2 text-yellow">O que fazemos na vida ecoa na eternidade.</h1>
-                <p class="mb-5 text-white">O único limite que te impede, é aquele que você aceita.</p>
-
-                <button class="p-2 text-yellow btn-outline-black">Seja um apoiador</button>
-                <button class="text-yellow btn-white">Competições</button>
+                    <button class="btn-outline-black">Seja um apoiador</button>
+                    <button class="btn-white">Competições</button>
+                </div>
             </div>
         </section>
 
-        <section class="company-identity">
-            <div class="w-75 m-auto">
+        <aside class="effect-text">
+            <div class="container w-50 p-5">
+                <h2>Pratique esportes como se não houvesse amanhã</h2>
 
-                <div class="w-50 p-5">
-                    <p>Sobre a Atlética</p>
+                <p>Você pode correr rápido, pular alto ou levantar pesos pesados, mas se seus maus hábitos o
+                    impedem, tudo isso será inútil!</p>
 
-                    <h2>Praticar esportes como se não houvesse amanhã</h2>
+                <a href="./pages/about.html">Sobre a Atlética</a>
+            </div>
+        </aside>
 
-                    <p>Você pode correr rápido, pular alto ou levantar pesos pesados, mas se seus maus hábitos o
-                        impedem, tudo isso será inútil!</p>
+        <article class="store-blog">
+            <div class="container d-flex align-items-center w-75 py-5 gap-5 text-center">
+                <aside class="store w-50">
+                    <h2>Venha conhecer nossa loja</h2>
+                    <img src="https://agenciaduo.me/duome-content./uploads/2017/10/plataforma-de-loja-virtual-min-scaled.jpg"
+                        alt="Imagem ilustrativo da loja virtual da atlética">
+                </aside>
+                <aside class="blog w-50">
+                    <h2>Venha conhecer nossa trajetória</h2>
+                    <img src="https://mailrelay.com/wp-content/uploads/2018/01/marketing-relacional.png"
+                        alt="Imagem ilustrativo do blog da atlética">
+                </aside>
+            </div>
+        </article>
 
-                    <a class="text-black" href="#">Leia mais</a>
+        <section class="parallax shadow-box text-center py-5"
+            style="background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-color-tennis-sport-advertising-background-backgroundmotionwork-outtennistreeshand-paintedfreshhouses-image_75815.jpg');">
+            <ul class="grid-text w-75 m-auto">
+                <li>
+                    <i class="fas fa-running"></i>
+                    <div>
+                        <h4>Corrida</h4>
+                        <p>Superando limites com cada passo</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-futbol"></i>
+                    <div>
+                        <h4>Futebol</h4>
+                        <p>Paixão em campo, gols e emoção</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-baseball-ball"></i>
+                    <div>
+                        <h4>Futsal</h4>
+                        <p>Velocidade, agilidade e dribles no salão</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-volleyball-ball"></i>
+                    <div>
+                        <h4>Vôlei</h4>
+                        <p>Trabalho em equipe e conquistas incríveis</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-basketball-ball"></i>
+                    <div>
+                        <h4>Basquete</h4>
+                        <p>Altura, agilidade e cestas espetaculares</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-gamepad"></i>
+                    <div>
+                        <h4>E-sports</h4>
+                        <p>Estratégia e habilidade no mundo digital</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="offerings">
+            <div class="container w-75 py-5 text-center">
+                <div>
+                    <h2>As melhores atividades para você.</h2>
+                    <p>Nossos programas</p>
                 </div>
 
-                <section class="identities">
-                    <div class="identity-img w-50">
-                        <img src="https://png.pngtree.com/background/20210711/original/pngtree-hand-painted-cool-volleyball-sports-club-poster-background-material-picture-image_1127055.jpg"
-                            alt="">
-                    </div>
-                    <div class="identity w-50">
-                        <div class="d-flex flex-row justify-content-evenly align-items-center p-5">
-                            <div class="w-25 mx-4">
-                                <h3>Nossa missão</h3>
-                            </div>
-                            <div class="w-75">
-                                <p>Ser uma instituição de excelência, destacando-se pelo compromisso com justiça social,
-                                    igualdade e respeito. Queremos um ambiente baseado em inovação, colaboração e
-                                    práticas
-                                    sustentáveis, com transparência e participação, onde todos se sintam valorizados e
-                                    motivados a alcançar o melhor.</p>
-                            </div>
+                <section class="offerings-items grid-image">
+                    <div class="offerings-item">
+                        <div class="offerings-item-image">
+                            <img src="https://static.vecteezy.com/ti/fotos-gratis/t1/27788272-esportes-fundo-corredor-pernas-corre-baixa-a-estrada-fechar-se-em-uma-tenis-ai-generativo-foto.jpg"
+                                alt="Foto generica de wallpaper de esportes">
                         </div>
-
-                        <div class="d-flex flex-row justify-content-evenly align-items-center px-5">
-                            <div class="w-25 mx-4">
-                                <h3>Nossa visão</h3>
-                            </div>
-                            <div class="w-75">
-                                <p>Criar um ambiente vibrante e inclusivo onde os membros se engajem com entusiasmo e
-                                    responsabilidade, promovendo trabalho em equipe, solidariedade e integridade, para
-                                    proporcionar experiências enriquecedoras e divertidas.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-row justify-content-evenly align-items-center p-5">
-                            <div class="w-25 mx-4">
-                                <h3>Nossos valores</h3>
-                            </div>
-                            <div class="w-75">
-                                <ul>
-                                    <li>Espírito de Equipe</li>
-                                    <li>Esporte e Saúde</li>
-                                    <li>Competitividade Saudável</li>
-                                    <li>Inclusão e Diversidade</li>
-                                    <li>Compromisso com a Instituição</li>
-                                </ul>
-                            </div>
+                        <div class="offerings-item-button w-50">
+                            <h4>Esportes</h4>
+                            <a href="#" class="btn-black">Descubra</a>
                         </div>
                     </div>
+
+                    <div class="offerings-item">
+                        <div class="offerings-item-image">
+                            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTY4NzIzLWltYWdlLWt3dnZlNjZiLmpwZw.jpg"
+                                alt="Foto generica de wallpaper de e-sports">
+                        </div>
+                        <div class="offerings-item-button w-50">
+                            <h4>E-sports</h4>
+                            <a href="#" class="btn-black">Descubra</a>
+                        </div>
+                    </div>
+
+                    <div class="offerings-item">
+                        <div class="offerings-item-image">
+                            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Foto generica de wallpaper de festa">
+                        </div>
+                        <div class="offerings-item-button w-50">
+                            <h4>Eventos</h4>
+                            <a href="#" class="btn-black">Descubra</a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
 
-        <section class="parallax-section shadow-box p-2 ">
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>Corrida</h4>
-                    <p>Superando limites com cada passo</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>Futebol</h4>
-                    <p>Paixão em campo, gols e emoção</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>Futsal</h4>
-                    <p>Velocidade e dribles no salão</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>Vôlei</h4>
-                    <p>Trabalho em equipe e conquistas incríveis</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>Basquete</h4>
-                    <p>Altura, agilidade e cestas espetaculares</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <i></i>
-                </div>
-                <div>
-                    <h4>E-sports</h4>
-                    <p>Estratégia e habilidade no mundo digital</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="events">
-            <div>
-                <h2 class="text-center">As melhores atividades para você.</h2>
-                <p class="text-center text-white">Nossos programas</p>
-            </div>
-
-            <section class="programs">
-                <div class="program-item">
-                    <img class="w-100 h-100"
-                        src="https://static.vecteezy.com/ti/fotos-gratis/t1/27788272-esportes-fundo-corredor-pernas-corre-baixa-a-estrada-fechar-se-em-uma-tenis-ai-generativo-foto.jpg"
-                        alt="Foto generica de wallpaper de esportes">
-
-                    <div class="program-item-button w-50 m-0">
-                        <h3>Esportes</h3>
-                        <button type="button" class="btn-black">Descubra</button>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <img class="w-100 h-100"
-                        src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTY4NzIzLWltYWdlLWt3dnZlNjZiLmpwZw.jpg"
-                        alt="Foto generica de wallpaper de e-sports">
-
-                    <div class="program-item-button w-50 m-0">
-                        <h3>E-sports</h3>
-                        <button type="button" class="btn-black">Descubra</button>
-                    </div>
-                </div>
-
-                <div class="program-item">
-                    <img class="w-100 h-100"
-                        src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Foto generica de wallpaper de festa">
-
-                    <div class="program-item-button w-50 m-0">
-                        <h3>Eventos</h3>
-                        <button type="button" class="btn-black">Descubra</button>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="contacts w-100">
-            <section class="contacts-top w-100 h-50">
+        <section class="contacts">
+            <section class="contacts-top h-50">
                 <div class="w-100 h-100 shadow-box">
-                    <img class="w-100 h-100"
-                        src="https://www.shutterstock.com/image-vector/colorful-concept-sports-silhouettes-sport-600nw-2378868431.jpg"
+                    <img src="https://www.shutterstock.com/image-vector/colorful-concept-sports-silhouettes-sport-600nw-2378868431.jpg"
                         alt="">
-                    <h2 class="w-100 text-center text-white">Superando limites, juntos somos imbatíveis!</h2>
+                    <h3 class="w-75 text-center text-white">Superando limites, juntos somos imbatíveis!</h3>
                 </div>
             </section>
 
             <section class="contacts-middle d-flex flex-row w-75 h-50 m-auto">
-                <div class="w-50">
+                <div class="map w-50">
                     <iframe class="w-100 h-100" loading="lazy"
                         src="https://maps.google.com/maps?q=Rua%20Carlos%20de%20Carvalho%20-%20Ferraz%20de%20Vasconcelos%20200&#038;t=m&#038;z=17&#038;output=embed&#038;iwloc=near"
                         title="Rua Carlos de Carvalho - Ferraz de Vasconcelos 200"
                         aria-label="Rua Carlos de Carvalho - Ferraz de Vasconcelos 200"></iframe>
                 </div>
 
-                <div class="d-flex justify-content-center align-items-center w-50">
-                    <div>
-                        <h3 class="text-center text-white">Entre em contato</h3>
-                        <!--<p>Em cada desafio, encontramos nossa força coletiva!</p>-->
-                        <ul> <!--Arrumar a cor e tipografia dos dados abaixo-->
-                            <li>
-                                <a href="#">
-                                    <i aria-hidden="true" class="bi bi-geo-alt-fill"></i>
-                                    <span>Rua Carlos de Carvalho 200</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i aria-hidden="true" class="bi bi-telephone-fill"></i>
-                                    <span>(11) 98328-8775</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i aria-hidden="true" class="bi bi-envelope-fill"></i>
-                                    <span>contato@atleticasagui.com.br</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <address
+                    class="contacts d-flex flex-column justify-content-center align-items-center w-50 h-100 text-center">
+                    <h3 class="text-white">Entre em contato</h3>
+                    <ul class="d-flex flex-column w-100">
+                        <li>
+                            <a href="mailto:contato@atleticasagui.com.br" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-envelope"></i>
+                                <span>contato@atleticasagui.com.br</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://g.co/kgs/YRsNnaT" target="_blank" rel="external">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Rua Carlos de Carvalho 200</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+55119983288775" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-phone"></i>
+                                <span>(11) 98328-8775</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/about.html#form" target="_blank" rel="noopener noreferrer">
+                                <i aria-hidden="true" class="fas fa-file-alt"></i>
+                                <span>Formulário</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
             </section>
 
-            <section class="contacts-bottom d-flex flex-column justify-content-end align-items-center h-50 p-5">
-                <div class="p-2 pt-4">
+            <address class="contacts-bottom d-flex flex-column justify-content-end align-items-center h-50 pt-5 pb-3">
+                <div>
                     <p class="text-black">Nos siga nas redes sociais</p>
                 </div>
                 <ul class="d-flex flex-row m-2">
                     <li>
                         <span class="background-icon">
-                            <a href="#" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+                            <a href="https://www.instagram.com/atleticasagui_fatecferraz/" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-instagram text-white"></i></a>
                         </span>
                     </li>
                     <li>
                         <span class="background-icon">
-                            <a href="#" target="_blank"><i class="bi bi-youtube text-white"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube text-white"></i></a>
                         </span>
                     </li>
                     <li>
                         <span class="background-icon">
-                            <a href="#" target="_blank"><i class="bi bi-linkedin text-white"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-linkedin text-white"></i></a>
                         </span>
                     </li>
                 </ul>
-            </section>
+            </address>
         </section>
     </main>
 
-    <footer>
-        <!--Arrumar a fonte-->
-        <section class="donation d-flex flex-row justify-content-evenly align-items-center p-4">
-            <div class="w-25 d-flex flex-column justify-content-center align-items-center p-4 m-4">
+    <footer class="text-center">
+        <section class="donation d-flex justify-content-evenly align-items-center p-4">
+            <div class="w-25 d-flex flex-column justify-content-center align-items-center">
                 <img class="logo-icon" src="./assets/logo_atletica.jpg" alt="Logo Atlética" />
 
-                <div class="w-50 text-justify">
-                    <p>Para patrocínios e doações, entre em contato via E-mail: contato@atleticasagui.com.br</p>
-                </div>
+                <address class="w-75">
+                    <p>Para patrocínios e doações, entre em contato via E-mail: <a
+                            href="mailto:contato@atleticasagui.com.br" target="_blank"
+                            rel="noopener noreferrer">contato@atleticasagui.com.br</a></p>
+                </address>
             </div>
 
-            <div class="w-25">
-                <p class="text-right">
-                    Além dos eventos esportivos, a Sagui promove festas, competições internas e atividades de
-                    integração, proporcionando um ambiente acolhedor onde os alunos têm a oportunidade de se conectar e
-                    construir amizades duradouras.</p>
-            </div>
+            <p class="w-25">
+                A Sagui não se limita a eventos esportivos; também organiza festas, competições internas e
+                atividades de integração, criando um ambiente acolhedor onde os alunos podem se conectar e formar
+                amizades duradouras</p>
         </section>
 
         <section class="copyright d-flex justify-content-center align-items-center">
-            <p class="m-0 p-4">Copyright 2024 © Todos os direitos reservados</p>
+            <p>Copyright 2024 © Todos os direitos reservados</p>
         </section>
     </footer>
-
-    <script src="./animations/slider_animation.js" async></script>
-    <script src="./script/lazyLoader.js"></script>
 </body>
 
 </html>
