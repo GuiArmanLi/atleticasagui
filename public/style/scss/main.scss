@@ -1,0 +1,14 @@
+@use './base/global';
+
+@use './pages/index';
+
+@use './pages/_about.scss';
+@use './pages/_blog.scss';
+@use './pages/_grafite-virtual.scss';
+@use './pages/_loja.scss';
+
+
+@use './shared/grid';
+@use './shared/slider';
+@use './shared/parallax';
+@use './shared/shadow-box';

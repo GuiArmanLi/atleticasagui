@@ -1,0 +1,31 @@
+.company-identity {
+    height: 150vh;
+
+    .identities {
+        position: relative;
+        height: fit-content;
+
+        .identity-img {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+
+            width: 75vh;
+            height: 75vh;
+            overflow: hidden;
+        }
+
+        .identity {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+
+            width: 75vh;
+            height: 75vh;
+            background-color: var(--yellow-color);
+            color: var(--soft-white-color);
+
+            overflow: hidden;
+        }
+    }
+}
