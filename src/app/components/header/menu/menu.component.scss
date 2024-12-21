@@ -1,0 +1,34 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--soft-white-color);
+}
+
+.menu-toggle {
+    display: none;
+    color: var(--soft-white-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

@@ -12,8 +12,6 @@ import { Product } from "../../shared/models/product";
   imports: [CommonModule, HttpClientModule],
   providers: [ProductsService]
 })
-export class StoreComponent { }
-
 export class StoreComponent implements OnInit {
   products!: Product[];
 
