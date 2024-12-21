@@ -1,0 +1,27 @@
+.info-map-with-contacts {
+    position: relative;
+    height: 100vh;
+    background-color: var(--beige-color);
+
+    .background-image {
+        position: relative;
+
+        h3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2;
+        }
+    }
+
+    .map-and-contacts {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 1;
+        background-color: var(--brown-color);
+    }
+}

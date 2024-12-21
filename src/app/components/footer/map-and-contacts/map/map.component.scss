@@ -1,0 +1,9 @@
+iframe {
+    aspect-ratio: 4/3;
+}
+
+@media (max-width: 768px) {
+    .map {
+        display: none;
+    }
+}
