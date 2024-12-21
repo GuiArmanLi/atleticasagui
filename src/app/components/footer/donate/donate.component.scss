@@ -1,0 +1,19 @@
+.donation {
+    background-color: var(--brown-color);
+    color: var(--soft-white-color);
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .donation {
+        flex-direction: column;
+
+        div {
+            width: 75% !important;
+        }
+
+        p {
+            width: 100% !important;
+        }
+    }
+}
