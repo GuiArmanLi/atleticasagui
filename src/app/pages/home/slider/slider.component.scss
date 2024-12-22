@@ -1,0 +1,11 @@
+.slider {
+    height: 90vh;
+
+    .slider-text {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-60%, -40%);
+        z-index: 2;
+    }
+}
