@@ -1,0 +1,14 @@
+.how-to-participate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--yellow-color);
+
+  text-align: center;
+
+  a {
+    color: var(--soft-white-color);
+  }
+}
