@@ -1,10 +1,12 @@
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--yellow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow-color);
 
-    p {
-        color: var(--deep-black-color);
-    }
+  min-height: 5vh;
+
+  p {
+    color: var(--deep-black-color);
+  }
 }
