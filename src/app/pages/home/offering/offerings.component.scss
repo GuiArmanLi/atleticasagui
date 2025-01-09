@@ -4,6 +4,12 @@
   background-color: var(--yellow-color);
   color: var(--brown-color);
 
+  .container {
+    width: 75%;
+    padding: 50px 0;
+    text-align: center;
+  }
+
   .offerings-items {
     .offerings-item {
       position: relative;
@@ -19,6 +25,8 @@
         position: absolute;
         bottom: 15%;
         left: 0;
+
+        width: 50%;
       }
     }
   }
