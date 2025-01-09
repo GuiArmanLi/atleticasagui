@@ -1,0 +1,16 @@
+.store {
+  display: flex;
+  min-height: 50vh;
+
+  .store-text {
+    width: 50%;
+    padding: var(--padding-horizontal);
+
+    background-color: var(--deep-black-color);
+    color: var(--soft-white-color);
+  }
+}
+
+.slider-store {
+  width: 50%;
+}
