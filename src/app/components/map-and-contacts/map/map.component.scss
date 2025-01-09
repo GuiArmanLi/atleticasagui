@@ -1,0 +1,17 @@
+div {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: 4/3;
+}
+
+@media (max-width: 1024px) {
+  .map {
+    display: none;
+  }
+}
