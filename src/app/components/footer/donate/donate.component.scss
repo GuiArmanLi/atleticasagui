@@ -1,19 +1,33 @@
 .donation {
-    background-color: var(--brown-color);
-    color: var(--soft-white-color);
-    word-wrap: break-word;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  min-height: 25vh;
+  padding: 40px;
+
+  background-color: var(--brown-color);
+  color: var(--soft-white-color);
+
+  text-align: center;
+  word-wrap: break-word;
+
+  p:first-child {
+    width: 50%;
+  }
+
+  p {
+    width: 25%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
-    .donation {
-        flex-direction: column;
+  .donation {
+    flex-direction: column;
 
-        div {
-            width: 75% !important;
-        }
-
-        p {
-            width: 100% !important;
-        }
+    p {
+      width: 100% !important;
     }
+  }
 }
