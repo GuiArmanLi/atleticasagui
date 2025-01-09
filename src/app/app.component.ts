@@ -5,13 +5,16 @@ import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
+  styles: '',
   imports: [RouterOutlet, FooterComponent, HeaderComponent],
   template: `
     <header-component></header-component>
-    <router-outlet></router-outlet>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
     <footer-component></footer-component>
   `
 })
 export class AppComponent {
-  title = 'atletica-sagui';
+
 }
