@@ -1,0 +1,16 @@
+.history-and-curiosities {
+  display: flex;
+  gap: 5rem;
+
+  height: 50vh;
+  padding: 1rem;
+  background-color: var(--yellow-color);
+  text-align: justify;
+
+}
+
+.history,
+.curiosities {
+  flex: 1;
+  padding: 2rem;
+}
