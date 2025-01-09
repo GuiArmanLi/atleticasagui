@@ -1,10 +1,14 @@
 .home-effect-text {
-  min-height: 30vh;
-  background-color: var(--yellow-color);
+  min-height: 100vh;
+  background-color: var(--beige-color);
 
   color: var(--soft-white-color);
 
-  a {
-    color: var(--deep-black-color);
+  div {
+    padding: 50px;
+
+    a {
+      color: var(--deep-black-color);
+    }
   }
 }
