@@ -5,7 +5,7 @@ import { CopyrightComponent } from "./copyright/copyright.component";
 @Component({
     selector: 'footer-component',
     template: `
-        <footer class="text-center">
+        <footer>
             <donate-component></donate-component>
             <copyright-component></copyright-component>
         </footer>
