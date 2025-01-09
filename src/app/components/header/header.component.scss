@@ -1,13 +1,17 @@
 header {
-    .navigation {
-        min-height: 10vh;
-        background-color: var(--yellow-color);
-    }
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 10vh;
+    background-color: var(--yellow-color);
+  }
 }
 
 @media (max-width: 768px) {
-    header {
-        min-height: 10vh;
-        height: fit-content;
-    }
+  header {
+    min-height: 10vh;
+    height: fit-content;
+  }
 }
