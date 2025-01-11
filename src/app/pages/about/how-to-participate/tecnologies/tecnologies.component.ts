@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
   styleUrls: ['./tecnologies.component.scss'],
   standalone: true
 })
-export class TecnologiesComponent { }
+export class TecnologiesComponent {
+
+}
