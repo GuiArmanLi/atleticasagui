@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SliderLogic } from "../../../components/slider-logic/slider-logic";
+import { SliderLogic } from "../../../shared/components/slider-logic/slider-logic";
 
 @Component({
   selector: 'slider-component',
