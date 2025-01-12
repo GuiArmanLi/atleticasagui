@@ -11,49 +11,49 @@
       "id": "3",
       "name": "Product 3",
       "price": 300,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
       "description": "A premium product for those who demand the best quality."
     },
     {
       "id": "4",
       "name": "Product 4",
       "price": 400,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg",
       "description": "This product combines style with functionality for everyday use."
     },
     {
       "id": "5",
       "name": "Product 5",
       "price": 500,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://picsum.photos/500/300",
       "description": "Perfect for professionals seeking reliable and efficient tools."
     },
     {
       "id": "6",
       "name": "Product 6",
       "price": 600,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://picsum.photos/600/300",
       "description": "A versatile product suitable for a wide range of applications."
     },
     {
       "id": "7",
       "name": "Product 7",
       "price": 700,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://picsum.photos/600/400",
       "description": "Engineered for performance and designed for comfort."
     },
     {
       "id": "8",
       "name": "Product 8",
       "price": 800,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://picsum.photos/200/400",
       "description": "A reliable choice for those who value quality and durability."
     },
     {
       "id": "9",
       "name": "Product 9",
       "price": 900,
-      "image": "https://picsum.photos/200/300",
+      "image": "https://picsum.photos/400/400",
       "description": "Top-of-the-line product for those who want nothing but the best."
     },
     {
@@ -140,42 +140,78 @@
       "name": "John Doe",
       "position": "CEO",
       "image": "https://picsum.photos/200/300",
-      "description": "ex ea commodo consequat."
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     },
     {
       "id": "3",
       "name": "John Doe",
       "position": "CEO",
       "image": "https://picsum.photos/200/300",
-      "description": "ex ea commodo consequat."
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     },
     {
       "id": "4",
       "name": "Jane Doe",
       "position": "CTO",
       "image": "https://picsum.photos/200/300",
-      "description": "ex ea commodo consequat."
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     },
     {
       "id": "5",
       "name": "Jane Doe",
       "position": "CTO",
       "image": "https://picsum.photos/200/300",
-      "description": "ex ea commodo consequat."
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     },
     {
       "id": "6",
       "name": "John Smith",
       "position": "CFO",
       "image": "https://picsum.photos/200/300",
-      "description": "ex ea commodo"
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     },
     {
       "id": "05e1",
       "name": "John Doe",
       "position": "CEO",
       "image": "https://picsum.photos/200/300",
-      "description": " ea commodo consequat."
+      "social-medias": [
+        {
+          "whatsApp": "https://web.whatsapp.com/",
+          "instagram": "https://www.instagram.com/",
+          "linkedIn": "https://www.linkedin.com/"
+        }
+      ]
     }
   ]
 }

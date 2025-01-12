@@ -3,5 +3,11 @@ export interface Member {
   image: string;
   name: string;
   position: string;
-  description: string;
+  socialMedias: SocialMedia;
+}
+
+export interface SocialMedia {
+  whatsapp: string;
+  instagram: string;
+  linkedin: string;
 }

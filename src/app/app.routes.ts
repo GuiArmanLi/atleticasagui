@@ -12,10 +12,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
   },
   { path: 'about', component: AboutComponent },
-  { path: 'posts', component: PostsComponent },
   { path: 'donate', component: DonateComponent },
   { path: 'graffiti', component: GraffitiComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'posts', component: PostsComponent },
   { path: 'store', component: StoreComponent },
 
   //Guardas e Resolvedores

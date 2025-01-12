@@ -4,13 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MembersService } from "./services/members.service";
 import { Member } from '../../../shared/models/member';
+import { SocialMediaComponent } from "../../../shared/components/social-medias/social-media.component";
 
 @Component({
   selector: "members-component",
   templateUrl: "./members.component.html",
   styleUrls: ["./members.component.scss"],
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, SocialMediaComponent],
   providers: [MembersService]
 })
 export class MembersComponent implements OnInit {
