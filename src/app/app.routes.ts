@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { BlogComponent } from './pages/blog/blog.component';
+import { PostsComponent } from './pages/posts/posts.component';
 import { DonateComponent } from './pages/donate/donate.component';
 import { GraffitiComponent } from './pages/graffiti/graffiti.component';
 import { StoreComponent } from './pages/store/store.component';
@@ -12,7 +12,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
   },
   { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'posts', component: PostsComponent },
   { path: 'donate', component: DonateComponent },
   { path: 'graffiti', component: GraffitiComponent },
   { path: 'home', component: HomeComponent },
