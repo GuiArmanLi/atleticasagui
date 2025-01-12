@@ -1,0 +1,8 @@
+<a [href]="qrcodeString" target="_blank" rel="external">
+  <qrcode
+    (qrCodeURL)="onChangeURL($event)"
+    [qrdata]="myAngularxQrCode"
+    [width]="256"
+    [errorCorrectionLevel]="'M'"
+  ></qrcode>
+</a>
