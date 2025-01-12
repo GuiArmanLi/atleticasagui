@@ -1,19 +1,28 @@
-p {
-  color: var(--deep-black-color);
-}
+address {
+  margin: auto;
 
-ul {
-  display: flex;
-  margin: 20px;
-
-  i {
-    color: var(--soft-white-color);
+  p {
+    color: var(--deep-black-color);
   }
-}
 
-.background-icon {
-  padding: 0.8rem;
-  margin: 0.5rem;
-  background-color: var(--brown-color);
-  align-items: center;
+  ul {
+    display: flex;
+
+    li {
+      flex: 1;
+      margin: 0.5rem;
+    }
+
+    i {
+      color: var(--soft-white-color);
+    }
+  }
+
+  .background-icon {
+    padding: 0.8rem;
+    border-radius: 2px;
+
+    background-color: var(--brown-color);
+    align-items: center;
+  }
 }
