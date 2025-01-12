@@ -1,0 +1,58 @@
+### GET ALL
+GET http://localhost:3000/posts
+
+### GETBYID
+GET http://localhost:3000/posts/2
+
+### POST
+POST http://localhost:3000/posts
+
+{
+  "title": "Treinamento de Força para Corredores",
+  "summary": "A importância do treinamento de força para melhorar o desempenho nas corridas de alta intensidade."
+}
+
+### DELETE
+DELETE http://localhost:3000/posts/2
+
+############################################################################################################
+
+### GETALL
+GET http://localhost:3000/products
+
+### GETBYID
+GET http://localhost:3000/products/1
+
+### POST
+
+POST http://localhost:3000/products
+
+{
+  "image": "https://picsum.photos/200/300",
+  "name": "Product",
+  "description": "ut aliquip ex ea commodo consequat.",
+  "price": 100
+}
+
+### DELETE
+DELETE http://localhost:3000/products/1
+
+############################################################################################################
+
+### GETALL
+GET http://localhost:3000/members
+### GETBYID
+GET http://localhost:3000/members/1
+
+### POST
+POST http://localhost:3000/members
+
+{
+  "name": "John Doe",
+  "position": "CEO",
+  "image": "https://picsum.photos/200/300",
+  "description": " aliquip ex ea commodo consequat."
+}
+
+### DELETE
+DELETE http://localhost:3000/members/1

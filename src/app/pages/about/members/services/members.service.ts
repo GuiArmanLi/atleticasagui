@@ -1,67 +1,39 @@
 import { Injectable } from "@angular/core";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
-@Injectable()
+import { Member } from "../../../../shared/models/member";
+import { environment } from "../../../../../environments/environment.dev";
+
+@Injectable(
+  {
+    providedIn: "root"
+  }
+)
 export class MembersService {
+  readonly API = `${environment.API}/members`;
 
-  members = [{
-    id: 1,
-    name: "John Doe",
-    position: "CEO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    id: 2,
-    name: "John Doe",
-    position: "CEO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    id: 3,
-    name: "John Doe",
-    position: "CEO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    id: 4,
-    name: "Jane Doe",
-    position: "CTO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    id: 5,
-    name: "Jane Doe",
-    position: "CTO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    id: 6,
-    name: "John Smith",
-    position: "CFO",
-    image: "https://picsum.photos/200/300",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  }]
+  constructor(private http: HttpClient) {
+
+  }
 
   getAllMembers() {
-    return this.members;
+    return this.http.get<Member[]>(`${this.API}`);
   }
 
-  getMemberById(id: number) {
+  getMemberById(id: string) {
+    return this.http.get<Member>(`${this.API}/${id}`);
   }
 
-  saveMember(member: any) {
-    return null;
+  createMember(member: Member) {
+    return this.http.post<Member>(`${this.API}`, member);
   }
 
-  updateMember(member: any) {
-    return null;
+  updateMember(member: Member) {
+    return this.http.put<Member>(`${this.API}/${member.id}`, member);
   }
 
-  deleteMember(id: number) {
-    return null;
+  deleteMember(id: string) {
+    return this.http.delete<Member>(`${this.API}/${id}`);
   }
+
 }

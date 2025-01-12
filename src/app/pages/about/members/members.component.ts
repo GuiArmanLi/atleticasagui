@@ -1,24 +1,25 @@
 import { Component, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { HttpClientModule } from '@angular/common/http';
+
 import { MembersService } from "./services/members.service";
+import { Member } from '../../../shared/models/member';
 
 @Component({
   selector: "members-component",
   templateUrl: "./members.component.html",
-  styleUrl: "./members.component.scss",
+  styleUrls: ["./members.component.scss"],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   providers: [MembersService]
 })
 export class MembersComponent implements OnInit {
-  members: any;
-  constructor(private _service: MembersService) {
+  members!: Member[];
 
-  }
+  constructor(private _service: MembersService) { }
 
   ngOnInit(): void {
-    this.members = this._service.getAllMembers();
+    this._service.getAllMembers().subscribe(data => this.members = data);
+    console.log(this.members);
   }
-
-
 }

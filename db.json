@@ -1,0 +1,181 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 200,
+      "image": "https://picsum.photos/200/300",
+      "description": "An innovative product offering excellent value for its price."
+    },
+    {
+      "id": "3",
+      "name": "Product 3",
+      "price": 300,
+      "image": "https://picsum.photos/200/300",
+      "description": "A premium product for those who demand the best quality."
+    },
+    {
+      "id": "4",
+      "name": "Product 4",
+      "price": 400,
+      "image": "https://picsum.photos/200/300",
+      "description": "This product combines style with functionality for everyday use."
+    },
+    {
+      "id": "5",
+      "name": "Product 5",
+      "price": 500,
+      "image": "https://picsum.photos/200/300",
+      "description": "Perfect for professionals seeking reliable and efficient tools."
+    },
+    {
+      "id": "6",
+      "name": "Product 6",
+      "price": 600,
+      "image": "https://picsum.photos/200/300",
+      "description": "A versatile product suitable for a wide range of applications."
+    },
+    {
+      "id": "7",
+      "name": "Product 7",
+      "price": 700,
+      "image": "https://picsum.photos/200/300",
+      "description": "Engineered for performance and designed for comfort."
+    },
+    {
+      "id": "8",
+      "name": "Product 8",
+      "price": 800,
+      "image": "https://picsum.photos/200/300",
+      "description": "A reliable choice for those who value quality and durability."
+    },
+    {
+      "id": "9",
+      "name": "Product 9",
+      "price": 900,
+      "image": "https://picsum.photos/200/300",
+      "description": "Top-of-the-line product for those who want nothing but the best."
+    },
+    {
+      "id": "10",
+      "name": "Product 10",
+      "price": 1000,
+      "image": "https://picsum.photos/200/300",
+      "description": "An exceptional product designed to exceed expectations."
+    },
+    {
+      "id": "a0d4",
+      "image": "https://picsum.photos/200/300",
+      "name": "Product 1",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 100
+    },
+    {
+      "id": "ae75",
+      "image": "https://picsum.photos/200/300",
+      "name": "Product",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 100
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "image": "https://picsum.photos/200/300",
+      "title": "A Nova Corrida Atletica Sagui 2025",
+      "summary": "Evento esportivo que reunirá atletas da região para uma competição de velocidade e resistência."
+    },
+    {
+      "id": "3",
+      "image": "https://picsum.photos/200/300",
+      "title": "Técnicas de Treinamento para Corredores",
+      "summary": "Dicas de treinamentos para melhorar a performance em provas de longa distância."
+    },
+    {
+      "id": "4",
+      "image": "https://picsum.photos/200/300",
+      "title": "Alimentação e Suplementação para Atletas",
+      "summary": "Como otimizar a dieta para alcançar o máximo de desempenho nas competições."
+    },
+    {
+      "id": "5",
+      "image": "https://picsum.photos/200/300",
+      "title": "Atletismo e a Importância da Recuperação",
+      "summary": "Estratégias para prevenir lesões e melhorar a recuperação após treinos intensos."
+    },
+    {
+      "id": "6",
+      "image": "https://picsum.photos/200/300",
+      "title": "Evento de Atletismo Infantil",
+      "summary": "Competição voltada para crianças, incentivando a prática esportiva desde cedo."
+    },
+    {
+      "id": "7",
+      "image": "https://picsum.photos/200/300",
+      "title": "Tecnologia no Atletismo",
+      "summary": "Como a tecnologia está transformando o treinamento e a performance dos atletas."
+    },
+    {
+      "id": "8",
+      "image": "https://picsum.photos/200/300",
+      "title": "História da Corrida de Rua no Brasil",
+      "summary": "Uma análise sobre a evolução das corridas de rua e o impacto cultural no Brasil."
+    },
+    {
+      "id": "9",
+      "image": "https://picsum.photos/200/300",
+      "title": "Como Escolher o Melhor Tênis para Corrida",
+      "summary": "Dicas para selecionar o calçado adequado de acordo com o tipo de treino e terreno."
+    },
+    {
+      "id": "10",
+      "image": "https://picsum.photos/200/300",
+      "title": "Treinamento de Força para Corredores",
+      "summary": "A importância do treinamento de força para melhorar o desempenho nas corridas de alta intensidade."
+    }
+  ],
+  "members": [
+    {
+      "id": "2",
+      "name": "John Doe",
+      "position": "CEO",
+      "image": "https://picsum.photos/200/300",
+      "description": "ex ea commodo consequat."
+    },
+    {
+      "id": "3",
+      "name": "John Doe",
+      "position": "CEO",
+      "image": "https://picsum.photos/200/300",
+      "description": "ex ea commodo consequat."
+    },
+    {
+      "id": "4",
+      "name": "Jane Doe",
+      "position": "CTO",
+      "image": "https://picsum.photos/200/300",
+      "description": "ex ea commodo consequat."
+    },
+    {
+      "id": "5",
+      "name": "Jane Doe",
+      "position": "CTO",
+      "image": "https://picsum.photos/200/300",
+      "description": "ex ea commodo consequat."
+    },
+    {
+      "id": "6",
+      "name": "John Smith",
+      "position": "CFO",
+      "image": "https://picsum.photos/200/300",
+      "description": "ex ea commodo"
+    },
+    {
+      "id": "05e1",
+      "name": "John Doe",
+      "position": "CEO",
+      "image": "https://picsum.photos/200/300",
+      "description": " ea commodo consequat."
+    }
+  ]
+}
