@@ -39,7 +39,9 @@ yarn-error.log*
 *.iml
 
 # Miscellaneous
-/.angular/cache
+.angular/cache/
+.angular/cache/*
+
 .sass-cache/
 /connect.lock
 /coverage
