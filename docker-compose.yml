@@ -1,0 +1,6 @@
+services:
+  atletica-sagui:
+    image: atletica-sagui
+    build: .
+    ports:
+      - 8081:80
