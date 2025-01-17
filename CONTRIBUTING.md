@@ -70,6 +70,12 @@ Usamos o padrão de commits para manter um histórico de commits claro e legíve
 
 - Exemplo: [Chore] Atualiza dependências do projeto
 
+`[Cleanup]`: Para remover código comentado, trechos desnecessários ou qualquer outra forma de limpeza do código-fonte, visando aprimorar sua legibilidade e manutenibilidade.
+
+`[Build]`: Para realizar modificações em arquivos de build e dependências.
+
+`[CI]`: Indicam mudanças relacionadas a integração contínua (continuous integration).
+
 ## Reportando Bugs/Solicitações de Funcionalidades
 
 Para relatar um bug ou para solicitar novas funcionalidades, abra uma issue.
